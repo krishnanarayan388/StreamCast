@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "ccf6a3a3-6b6b-4a8f-9224-21bd977f7845",
+    "colName": "Podcast",
+    "created": "2023-04-21T18:32:49.867Z",
+    "sortNum": 10000,
+    "folders": []
+  },
+  {
+    "_id": "eec315bf-b94d-487d-8a71-7eb57d0fddcb",
+    "colName": "Media",
+    "created": "2023-04-22T08:59:12.801Z",
+    "sortNum": 20000,
+    "folders": []
+  },
+  {
+    "_id": "749d78e5-7373-4e22-939c-979035650ef6",
+    "colName": "Playlist",
+    "created": "2023-04-23T14:22:45.149Z",
+    "sortNum": 30000,
+    "folders": []
+  }
+]

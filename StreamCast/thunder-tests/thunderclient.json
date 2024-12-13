@@ -1,0 +1,190 @@
+[
+  {
+    "_id": "e8d9dbc9-bf38-4799-9ff8-098dbb803e75",
+    "colId": "ccf6a3a3-6b6b-4a8f-9224-21bd977f7845",
+    "containerId": "",
+    "name": "Get Podcast",
+    "url": "http://localhost:3001/api/podcast/get-podcast-bypopularity",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-21T18:32:49.872Z",
+    "modified": "2023-04-22T19:32:53.772Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a00c1b7f-df7c-4095-a1f9-d0200d4df123",
+    "colId": "ccf6a3a3-6b6b-4a8f-9224-21bd977f7845",
+    "containerId": "",
+    "name": "Add Podcast",
+    "url": "http://localhost:3001/api/podcast/create-podcast",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-21T18:35:41.480Z",
+    "modified": "2023-04-21T18:35:41.480Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Demo\",\n  \"description\": \"This is Desc\",\n  \"image\": \"https\",\n  \"category\": \"No\",\n  \"type\": \"au\",\n  \"fileUrl\": \"op\",\n  \"authorName\": \"Om\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c800c8f0-632a-41f5-bf76-32af65ca9583",
+    "colId": "ccf6a3a3-6b6b-4a8f-9224-21bd977f7845",
+    "containerId": "",
+    "name": "Search podcast",
+    "url": "http://localhost:3001/api/podcast/search-podcast/?searchQuery=demo",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-04-21T18:38:25.584Z",
+    "modified": "2023-04-21T18:45:11.326Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "searchQuery",
+        "value": "demo",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "03f46491-a772-4e71-8626-089f7b012f2e",
+    "colId": "ccf6a3a3-6b6b-4a8f-9224-21bd977f7845",
+    "containerId": "",
+    "name": "update podcast",
+    "url": "http://localhost:3001/api/podcast/update-podcast/6442d769ea726932df4ce68b",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2023-04-21T18:44:30.341Z",
+    "modified": "2023-04-21T18:44:30.341Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Demo 2\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e5c6b4ea-1487-49dd-967c-be17709dfe41",
+    "colId": "eec315bf-b94d-487d-8a71-7eb57d0fddcb",
+    "containerId": "",
+    "name": "Upload Image",
+    "url": "http://localhost:3001/api/upload/upload-image",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-22T08:59:12.810Z",
+    "modified": "2023-04-22T09:03:09.102Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "image",
+          "value": "",
+          "isDisabled": true
+        }
+      ],
+      "files": [
+        {
+          "name": "file",
+          "value": "../../../../Pictures/Screenshots/Screenshot from 2023-04-22 00-31-59.png"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "34d5bc19-a713-47d1-b13e-c91cd92a4f85",
+    "colId": "ccf6a3a3-6b6b-4a8f-9224-21bd977f7845",
+    "containerId": "",
+    "name": "Get all Fav Podcast ",
+    "url": "http://localhost:3001/api/podcast/get-fav-podcasts/644301bcd95c6375f8274f73",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-04-22T14:12:15.975Z",
+    "modified": "2023-04-22T15:06:07.292Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "d9528725-e5e0-4615-8297-445a2a415f3c",
+    "colId": "ccf6a3a3-6b6b-4a8f-9224-21bd977f7845",
+    "containerId": "",
+    "name": "Get Podcast By Category",
+    "url": "http://localhost:3001/api/podcast/get-podcast-bycategory/COMEDY",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2023-04-22T19:02:51.252Z",
+    "modified": "2023-04-22T19:02:51.252Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"userId\": \"644301bcd95c6375f8274f73\",\n  \"podcastId\": \"6443b4330b8c4b1a427c6e88\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "163853de-30a3-45b3-b1a6-f6ca619b37f1",
+    "colId": "ccf6a3a3-6b6b-4a8f-9224-21bd977f7845",
+    "containerId": "",
+    "name": "Increment Popularity",
+    "url": "http://localhost:3001/api/podcast/add-view",
+    "method": "PUT",
+    "sortNum": 70000,
+    "created": "2023-04-22T19:05:47.785Z",
+    "modified": "2023-04-22T19:05:47.785Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"userId\": \"644301bcd95c6375f8274f73\",\n  \"podcastId\": \"6443b4330b8c4b1a427c6e88\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e19af20e-c239-478e-bdd8-84e4d1c50b72",
+    "colId": "749d78e5-7373-4e22-939c-979035650ef6",
+    "containerId": "",
+    "name": "Get Playlist",
+    "url": "http://localhost:3001/api/playlist/get-playlists/644301bcd95c6375f8274f73",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-23T14:22:45.152Z",
+    "modified": "2023-04-23T14:23:56.510Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "29ea88df-5e20-4fe1-9dc1-df436762646d",
+    "colId": "749d78e5-7373-4e22-939c-979035650ef6",
+    "containerId": "",
+    "name": "Add playlist",
+    "url": "http://localhost:3001/api/playlist/create-playlist/",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-23T14:26:44.865Z",
+    "modified": "2023-04-23T21:16:42.697Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Test Playlist\",\n  \"authorName\": \"Om Prakash\",\n  \"userId\": \"644582cc85e5ef85117c53b5\",\n  \"podcastId\": \"6443b4f80b8c4b1a427c6e8a\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

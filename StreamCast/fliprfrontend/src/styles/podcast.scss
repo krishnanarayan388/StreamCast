@@ -1,0 +1,30 @@
+.playIcon {
+    z-index: 10;
+    margin-left: 6.3rem;
+}
+
+.podcastCard:hover {
+    // background: rgb(35, 142, 72);
+}
+.postCastPlayBtn{
+    margin-top: -2.7rem;
+    margin-left: 5.3rem;
+   display: none;
+
+}
+.podcastCard{
+    background-color: #0B2447;
+    border-color: #293f5c;
+    &:hover{
+        background-color: "#00193a";
+        .postCastPlayBtn{
+            display: flex;
+        }
+
+    }
+}
+
+// .podcastCard:hover .postCastPlayBtn{
+//     // background: rgb(35, 142, 72);
+//     display: flex;
+// }

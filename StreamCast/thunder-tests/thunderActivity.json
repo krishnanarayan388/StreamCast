@@ -1,0 +1,72 @@
+[{
+    "_id": "4efc918d-c5b5-47e8-a36b-ee4e05a20dc0",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/podcast/",
+    "url": "https://fipr-backend.onrender.com/api/playlist/add-to-playlist",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-04-21T18:16:58.064Z",
+    "modified": "2023-04-23T15:56:38.059Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Test Playlist\",\n  \"userId\": \"644301bcd95c6375f8274f73\",\n  \"podcastId\": \"6443ce119dc7f44c55929749\",\n  \"playlistId\": \"644546c4d8f3d01bf1d1cdf7\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "03377b77-2fc2-4ffa-9107-2d479a1b2ced",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/podcast/get-allpodcasts",
+    "url": "https://fipr-backend.onrender.com/api/podcast/create-podcast",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-21T18:17:17.187Z",
+    "modified": "2023-04-21T18:36:24.702Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Ashish\",\n  \"description\": \"This is Desc\",\n  \"image\": \"https\",\n  \"category\": \"No\",\n  \"type\": \"au\",\n  \"fileUrl\": \"op\",\n  \"authorName\": \"Om\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "8c9a78c0-ed30-48e8-a84c-6a453deae849",
+    "colId": "history",
+    "containerId": "",
+    "name": "https://fipr-backend.onrender.com/api/podcast/get-allpodcasts",
+    "url": "https://fipr-backend.onrender.com/api/playlist/get-all-playlist",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-21T18:20:49.283Z",
+    "modified": "2023-04-23T15:10:43.049Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "1cc4c917-bdc1-4142-8080-743e68e29cee",
+    "colId": "history",
+    "containerId": "",
+    "name": "https://fipr-backend.onrender.com/api/podcast//search-podcast/:searchQuery",
+    "url": "https://fipr-backend.onrender.com/api/podcast/add-view",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-04-21T18:37:26.229Z",
+    "modified": "2023-04-22T19:03:04.553Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"userId\": \"644301bcd95c6375f8274f73\",\n  \"podcastId\": \"6443b4330b8c4b1a427c6e88\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
